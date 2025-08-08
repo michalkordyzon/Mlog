@@ -1,0 +1,73 @@
+baseURL = "https://michalkordyzon.github.io/Mlog/"
+languageCode = "en-us"
+title = "Michal’s Log"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # JSON is needed for search
+
+# --- Site-wide rendering niceties ---
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true                # allow raw HTML in Markdown (for math blocks, etc.)
+  [markup.highlight]
+    noClasses = false            # nicer code highlighting w/ PaperMod CSS
+
+[params]
+  defaultTheme = "auto"          # dark/light toggle
+  disableThemeToggle = false
+
+  # Post/page chrome
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true                 # show Table of Contents in posts
+  tocOpen = true                 # expanded by default
+  # Math (KaTeX)
+  math = true
+
+  # Home intro card (swap to profileMode later if you prefer)
+  [params.homeInfoParams]
+    Title = "👋 Welcome to Michal’s Log"
+    Content = "Notes on AI, ML, and experiments."
+
+  # Social icons under the intro card / footer
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/michalkordyzon"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/michalkordyzon/"
+
+# Top navigation
+[[menu.main]]
+  name = "Posts"
+  url  = "posts/"
+  weight = 10
+[[menu.main]]
+  name = "Archive"
+  url  = "archives/"
+  weight = 20
+[[menu.main]]
+  name = "Tags"
+  url  = "tags/"
+  weight = 30
+[[menu.main]]
+  name = "Search"
+  url  = "search/"
+  weight = 40
+[[menu.main]]
+  name = "About"
+
+
+baseURL = "https://michalkordyzon.github.io/Mlog/"
+canonifyURLs = true
