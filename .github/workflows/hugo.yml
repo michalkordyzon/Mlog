@@ -6,16 +6,21 @@ permissions:
   contents: write
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive       # important if your theme is a submodule
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.127.0'
           extended: true
-      - run: hugo --minify --buildDrafts   # remove --buildDrafts for prod
+      - run: hugo --minify            # remove --buildDrafts for prod
+        env:
+          HUGO_ENV: production
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

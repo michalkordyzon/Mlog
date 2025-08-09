@@ -35,6 +35,9 @@ enableRobotsTXT = true
   # Math (KaTeX)
   math = true
 
+
+  mainSections = ["posts"]   # so the theme knows which section is “posts”
+
   # Home intro card (swap to profileMode later if you prefer)
   [params.homeInfoParams]
     Title = "👋 Welcome to Michal’s Log"
