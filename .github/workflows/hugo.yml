@@ -18,8 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (with submodules)
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -32,13 +35,13 @@ jobs:
           hugo --minify \
                --baseURL "https://mlog.space/" \
                --cleanDestinationDir
-          # Optional flags while testing:
+          # Optional while testing:
           # --buildDrafts --buildFuture
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public   # << IMPORTANT: upload the built site, not the repo
+          path: ./public   # upload the built site
 
   deploy:
     needs: build

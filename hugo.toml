@@ -11,7 +11,10 @@ enableRobotsTXT = true
   posts = "/posts/:slug/"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]  # JSON is needed for search
+  home    = ["HTML","RSS"]
+  section = ["HTML","RSS"]
+  taxonomy = ["HTML","RSS"]
+  term     = ["HTML","RSS"]
 
 # --- Site-wide rendering niceties ---
 [markup]
