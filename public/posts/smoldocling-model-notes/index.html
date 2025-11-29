@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>SmolDocling model notes | Michal’s Log</title>
 <meta name="keywords" content="">
 <meta name="description" content="Introduction
@@ -12,16 +12,16 @@ OCR on documents remains a challenging task. While printed text can often be rec
 Recent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt.
 This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.">
 <meta name="author" content="">
-<link rel="canonical" href="https://mlog.space/posts/smoldocling-model-notes/">
+<link rel="canonical" href="http://localhost:1313/posts/smoldocling-model-notes/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://mlog.space/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://mlog.space/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://mlog.space/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://mlog.space/apple-touch-icon.png">
-<link rel="mask-icon" href="https://mlog.space/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://mlog.space/posts/smoldocling-model-notes/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/smoldocling-model-notes/">
 <noscript>
     <style>
         #theme-toggle,
@@ -82,73 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<meta property="og:url" content="https://mlog.space/posts/smoldocling-model-notes/">
-  <meta property="og:site_name" content="Michal’s Log">
-  <meta property="og:title" content="SmolDocling model notes">
-  <meta property="og:description" content="Introduction OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.
-Recent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt. This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-08-08T16:42:36+02:00">
-    <meta property="article:modified_time" content="2025-08-08T16:42:36+02:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SmolDocling model notes">
-<meta name="twitter:description" content="Introduction
-OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.
-Recent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt.
-This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://mlog.space/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "SmolDocling model notes",
-      "item": "https://mlog.space/posts/smoldocling-model-notes/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SmolDocling model notes",
-  "name": "SmolDocling model notes",
-  "description": "Introduction OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.\nRecent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt. This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "Introduction OCR on documents remains a challenging task. While printed text can often be recognized with 95% or higher accuracy, real-world documents — containing handwriting, non-standard layouts, and other irregularities — are still much harder to read accurately. There are high quality systems solving documents reading in sub-tasks: OCR, layout analysis, structure recognition, classification.\nRecent trend is using large vision-language models to solve whole convertion task in one shot, and giving the user opportunity to define additional specific tasks to do in the prompt. This post is about SmalDocling, a very tiny and compute-effient vision-language model doing the convertion task and the instruction task written into a prompt. The post is based on SmolDocling research paper.\nArchitecture SmolDocling model comes from family of Hugging Face’s SmolVLM. It was trained on datasets allowing for recognition of captions, charts, forms, code, equations, tables, footnotes, lists, page footers \u0026 headers, section headings, and text. SmolDocling does OCR on elements mentioned and recognizes the type and location. And here we have main task of SmolDocling - conversion and docuemnt understanding.\nSmolDocling architecture The red cube named as Vision Encoder on the picture above is the image encoder used in SmolVM models, SigLIP-base path-16/512 (93M). It comes from Google’s CLIP-style image encoders — replacing CLIP’s (OpenAI) contrastive softmax loss with a sigmoid cross-entropy loss (this change makes training more stable and more accurate when matching images and text). Its superpowers are low-memory and fast inference. Those superpowers are used here for multimodal reasoning tasks.\nUsage We can get bigger SmolDocling model (), or any large vision-language model to quickly get higher accuracy but also ‘heavier’ inference and so much bigger usage of compute. SmolDocling can find right niche for deployments on edge devices or on any resource-constrained setting. Another usage is quick prototyping and experimentation, it’s always better to start with small and quick models and avoid complexity that comes with a size.\nDocTags Another interesting thing is a standard proposed by smolDocling model - DocTags. It is created to use efficiently in inference and to train VLMs in a standardized way. HTML and Mardown formats are ambigous and by do not keep document layout context. DocTags separates text content from layout of document which bring clarity. DocTags has also clear and concise format which saves tokens and thus, inference and training on VLMs. See the basic example:\nHTML:\nInvoiceCustomer Name: John Doe\n~20–25 tokens.\nDocTags:\nInvoiceCustomer Name: John Doe ~12–15 tokens.\nDocTags leveraged OTLS standard and its full vocabulary. OTSL stands for Optimized Table Structure Language, and it’s specialized markup language designed for keeping table structure information. This choise also bring clarity and saves tokens.\nPre-training datasets Seeing lack of good multimodal document data SmolDocling team created new public data set: DocLayNet-PT. It contains 1.4M pages from DocFM dataset (PDF documents from CommonCrawl, Wikipedia, business domains). Original SmolVLM had DocVQA capabilities (Document Visual Question Answering). To keep this feature the smolDocling was trained on Docmatix dataset with added DocTags format information.\nTask-specific datasets The model was also fine-tuned for specific tasks like recognition of layout, tables, charts, code, and equations. For layout and tables the team prepared:\n76k pages of human annotated and reviewed documets from DocLayNet-PT (created dataset was named DocLayNet v2) 63k pages of tables and text from WordScape dataset 250k pages of synthetic annotations from wikpedia for layout, colors and fonts (created dataset was named SynthDocNet) Tables recognition were covered by fine-tuning with PubTables-1M, FinTabNet, WikiTableSet, and tabular info from WordScape. Table strcuture information was pushed into OTSL format, so that each cell tag had it’s corresponding structure and text. Public chart recognition datasets are low quality or not diversified. That triggered creation of anothe dataset containing in total 2.5 million visually diverse charts in 4 categories: line, pie, bar, and stacked bar. SmolDocling team created also code recognition dataset addressing lack of datasets containing code as images. The dataset includes 9.3 million code snippets rendered at 120 dpi. Another dataset was created regarding mathematical formulas: using 730k unique formulas from publi datasets and collecting 4.7 million formulas from arXiv. Final equations dataset contains 5.5 million unique formulas rendered at 120 dpi.\nTraining datasets used for smolDocling Experiments To enhance recognition of specific elements and to introduce ability to write no-code instructions to smolDocling model the team has put rule-based techniques and Granite-3.1-2b-instruct model. Random elements were taken from DocLayNet-PT and according instructions for this element were created, something like: “Perform OCR at bbox”, or “Identify page element type at bbox”. Training with Cauldron was applied to avoid catastrophic forgetting.\nThe model was trained on:\n64 NVIDIA A100 80GB GPUs, one epoch lasting 38 hours, 4 epochs in total. optimizer: AdamW learning rates: 2x 10^-4, 2x10^-6 gradient clipping: 1.0 warmup ratio 0.03 Achieved inference efficiency:\npage conversion time: 0.35 seconds memory usage: 0.489GB VRAM max sequence length: 8192 tokens the model cam process 3 pages at a time SmolDocling is a small but efficient vision-language model for document conversion. It produces rich structured output in a single pass, which reduces error accumulation compared to multi-stage systems. The model can link captions to images, preserve code formatting, and remove redundant headers or footers. Typical issues include missing tags, malformed structure, and repetitive token loops. Future work should improve page element localization for better accuracy. Overall, SmolDocling shows that compact models with optimized formats can rival much larger models in multi-task document understanding.\n",
-  "wordCount" : "900",
-  "inLanguage": "en",
-  "datePublished": "2025-08-08T16:42:36+02:00",
-  "dateModified": "2025-08-08T16:42:36+02:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://mlog.space/posts/smoldocling-model-notes/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Michal’s Log",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://mlog.space/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -166,7 +100,7 @@ This post is about SmalDocling, a very tiny and compute-effient vision-language 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://mlog.space/" accesskey="h" title="Michal’s Log (Alt + H)">Michal’s Log</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Michal’s Log (Alt + H)">Michal’s Log</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -192,27 +126,27 @@ This post is about SmalDocling, a very tiny and compute-effient vision-language 
         </div>
         <ul id="menu">
             <li>
-                <a href="https://mlog.space/posts/" title="Posts">
+                <a href="http://localhost:1313/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="https://mlog.space/archives/" title="Archive">
+                <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://mlog.space/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://mlog.space/search/" title="Search">
+                <a href="http://localhost:1313/search/" title="Search">
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="https://mlog.space/" title="About">
+                <a href="http://localhost:1313/" title="About">
                     <span>About</span>
                 </a>
             </li>
@@ -223,7 +157,7 @@ This post is about SmalDocling, a very tiny and compute-effient vision-language 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://mlog.space/">Home</a>&nbsp;»&nbsp;<a href="https://mlog.space/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       SmolDocling model notes
     </h1>
@@ -312,7 +246,7 @@ Overall, SmolDocling shows that compact models with optimized formats can rival 
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://mlog.space/posts/granite-vision-model-notes/">
+  <a class="prev" href="http://localhost:1313/posts/granite-vision-model-notes/">
     <span class="title">« Prev</span>
     <br>
     <span>Granite Vision model notes</span>
@@ -324,7 +258,7 @@ Overall, SmolDocling shows that compact models with optimized formats can rival 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://mlog.space/">Michal’s Log</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Michal’s Log</a></span> · 
 
     <span>
         Powered by
